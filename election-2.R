@@ -50,8 +50,6 @@ ggplot(elections, aes(x = State, y = VEP.Turnout.Rate)) +
 
 
 
-
-#b) 2. Histogram with Normal Curve Overlay
 ggplot(elections, aes(x = VEP.Turnout.Rate)) +
   geom_histogram(aes(y = ..density..), bins = 30, fill = "skyblue", color = "black") +  
   geom_density(color = "red") +  
