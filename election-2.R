@@ -39,8 +39,7 @@ elections <- elections %>% filter(!is.na(VEP.Turnout.Rate))
 
 
 
-#2.
-#a)  1. Boxplot with Outliers
+
 # Clean VEP.Turnout.Rate to remove '%' signs and convert to numeric
 elections$VEP.Turnout.Rate <- as.numeric(gsub("%", "", elections$VEP.Turnout.Rate))
 ggplot(elections, aes(x = State, y = VEP.Turnout.Rate)) +
